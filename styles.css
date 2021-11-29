@@ -1,0 +1,87 @@
+body{
+/*background-color:rgb(255,182,193);*/
+background:url("nature.jpg");
+background-size:cover;
+}
+
+
+
+
+input,select{
+
+width:200px;
+height:20px;
+
+border: brawn solid 2px;
+border-radius:7px;
+text-align:center;
+font-family:cursive;
+background-color:white;
+font-size:13px;
+
+}
+
+#btn:hover {
+  background-color:pink;
+}
+
+#btn{
+width:250px;
+height:30px;
+background-color:yellow;
+border: white solid 2px;
+border-radius:80px;
+font-family:cursive;
+ 
+
+}
+h1{
+	color:white;
+	text-align:center;
+	font-family:cursive;
+
+}
+
+span{
+	color:red;
+	
+}
+
+
+#r1,#r2{
+	font-size:3px;
+	width:20px;
+height:20px;
+text-align:center;
+border: blue solid 2px;
+border-radius:7px;
+font-family:cursive;
+}
+
+div{
+		
+		margin:0px auto;
+		width:30%;
+		height:40%;
+		padding:10px;
+		font-size:20px;
+		font-family:cursive;
+	background-color:rgb(128,128,128,0.6);
+	
+border-radius:4px;
+	
+	}
+#year{
+	
+	width:150px;
+	height:20px;
+}
+
+#grade{
+	width:200px;
+	height:20px;
+}
+
+
+
+

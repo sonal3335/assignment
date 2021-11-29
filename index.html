@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+<title>Registration Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+<form name="registration" action="#"  autocomplete="off" onsubmit='validation()'>
+
+
+<h1>Please Fill Your Details</h1>
+<div>
+<table  cellspacing="10" align="center">
+
+<tr><td><label>Full Name:</label>   <input type="text" id="user" placeholder="Enter your name">
+<br><span id="userr"></span>
+</td></tr>
+
+<tr><td><label>EmailId:</label>   <input type="text" id="email" placeholder="Enter your email">
+<br><span id="emaill"></span>
+</td></tr>
+
+<tr><td>
+<label>Gender:</label>   <input type="radio" name="gender" value="male" id="r1">Male
+<input type="radio" name="gender" value="female" id="r2">Female
+
+</td></tr>
+
+<tr><td>
+<label>Education Details:</label> <select name="Education Details"  id="education"  value="Education Details" required>
+                                             <option>B.E|B.Tech</option>          
+                                             <option>BCA|MCA</option>
+                                            <option>Diploma</option>
+                                               <option>HSC</option>
+                                             <option>SSC</option>
+                                            </select>
+  <br><span id="educationn"></span>
+</td></tr>
+
+<tr><td>
+<label>Year:</label> <input type="text" id="year">
+<br><span id="yearr"></span>
+</td></tr>
+
+<tr><td>
+<label>Grade/%:</label> <input type="text" id="grade">
+<br><span id="gradee"></span>
+</td></tr>
+
+
+
+
+<tr><td>
+<label>Address:</label> <input type="text" id="address" placeholder="Enter your Address">
+<br><span id="add"></span>
+</td></tr>
+
+<tr><td><label>Phone:</label> <input type="text" id="mobile" placeholder="Enter your phoneno">
+<br><span id="mobilee"></span>
+</td></tr>
+
+<tr><td><label>Skills:</label> <input type="text" id="skills" placeholder="Enter your skills">
+<br><span id="skillss"></span>
+</td></tr>
+
+<tr><td><label>Hobbies:</label> <input type="text" id="hobbies" placeholder="Enter Your Hobbies">
+<br><span id="hoby"></span>
+<tr><td>
+
+
+<tr><td>
+<input type="text" id="imglink" placeholder="link to your online photo">
+<a href="C:\Users\Mayur\Desktop\pixel6\dog.jpg">Click here</a required>
+<tr><td>
+
+
+<tr><td><input type="submit" id="btn" value="Submit"></td></tr>
+</table>
+</div>
+
+</form>
+
+<script type="text/javascript">
+
+function validation()
+{
+var user= document.getElementById('user').value;
+var email= document.getElementById('email').value;
+var address= document.getElementById('address').value;
+var mobile= document.getElementById('mobile').value;
+
+if(user.length<1 || user==""){  
+document.getElementById("userr").innerHTML="***name can't be blank";
+}
+
+if(email=="")
+{
+     document.getElementById('emaill').innerHTML="***enter your emailId";
+	
+
+}
+
+if(address.length<25)
+{
+     document.getElementById('add').innerHTML="**Please enter atleast 25 characters";
+	 
+	 
+
+}
+
+if (isNaN(mobile)){  
+  document.getElementById("mobilee").innerHTML="***Enter Numeric value only";  
+  
+}
+
+
+if(hobbies!=/^[0-9a-zA-Z]+$/)
+{
+     document.getElementById('hoby').innerHTML="**Please enter letters and numbers only.";
+	 
+}
+if(year!=/^\d{10}$/)
+{
+     document.getElementById('yearr').innerHTML="***Please enter year('YYYY') in number only";
+	 
+}
+if(grade!=/^[0-9a-zA-Z]+$/)
+{
+     document.getElementById('gradee').innerHTML="***Please enter valid grade";
+	 
+}
+
+}
+
+
+
+/* Information fetching code
+
+As requested, I have completed all the assignment except fetching of the data cant be retrive on the next page. Only one task work at a time which includes either validation or fetching data. 
+
+
+var fullname=document.getElementById("user").value;
+var emailid=document.getElementById("email").value;
+var radio=document.getElementById("r1").value;
+var radioo=document.getElementById("r2").value;
+var educationn=document.getElementById("education").value;
+var yearr=document.getElementById("year").value;
+var gradee=document.getElementById("grade").value;
+var addresss=document.getElementById("address").value;
+var phone=document.getElementById("mobile").value;
+var skillsss=document.getElementById("skills").value;
+var hoby=document.getElementById("hobbies").value;
+
+
+
+
+
+document.write("Your Information:<br>"+"Full Name:"+fullname+"<br>");
+
+document.write("EmailId:"+emailid+"<br>");
+
+document.write("Gender:"+radio+"<br>");
+document.write("Gender:"+radioo+"<br>");
+document.write("Education:"+educationn+"<br>");
+document.write("Year:"+yearr+"<br>");
+document.write("Grade:"+gradee+"<br>");
+document.write("Address:"+addresss+"<br>");
+document.write("Mobileno:"+phone+"<br>");
+document.write("Skills:"+skillsss+"<br>");
+document.write("Hobbies:"+hoby+"<br>");
+
+}*/
+
+
+
+
+
+</script>
+
+</body>
+</html>
+
